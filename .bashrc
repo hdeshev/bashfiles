@@ -34,6 +34,11 @@ function fromBase64 {
     powershell "[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('$1'))"
 }
 
+# simulate the PowerShell Invoke-Item cmdlet (aliased to ii)
+function ii {
+    cmd "start $1"
+}
+
 # Postmark stuff
 function removePostmarkServices {
     powershell "Get-Service postmark* | Stop-Service -passthru | foreach { sc.exe delete $_.Name }"
