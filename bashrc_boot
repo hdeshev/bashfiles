@@ -1,0 +1,2 @@
+# use this file as your .bashrc to load the real configuration
+source ~/.bashfiles/bashrc
