@@ -9,9 +9,18 @@ function ii {
     local command=$1
 
     if [ -d $command ]; then
-        # strip trailing slash when starting directories
-        command=${command%/}
+        command=`fixDirPath "$command"`
     fi
 
     cmd "start $command"
 }
+
+# remove trailing slash and turn slashes to backslashes
+function fixDirPath {
+    local result="$(echo -n "$1" | sed -e "{
+        s/\(.*\)\/$/\\1/g
+        s/\//\\\\/g
+    }")"
+    echo "$result"
+}
+
