@@ -6,5 +6,12 @@ alias powershell='powershell.exe'
 
 # simulate the PowerShell Invoke-Item cmdlet (aliased to ii)
 function ii {
-    cmd "start $1"
+    local command=$1
+
+    if [ -d $command ]; then
+        # strip trailing slash when starting directories
+        command=${command%/}
+    fi
+
+    cmd "start $command"
 }
