@@ -28,7 +28,7 @@ function prompt_command {
 }
 PROMPT_COMMAND=prompt_command
 export PROMPT_COMMAND
-PS1='[$promptPWD]$ '
+PS1='\e[37;1m[$promptPWD]$ \e[0m'
 
 function fromBase64 {
     powershell "[Text.Encoding]::UTF8.GetString([Convert]::FromBase64String('$1'))"
