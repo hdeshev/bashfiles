@@ -1,6 +1,3 @@
-# Vi key bindings
-set -o vi
-
 alias ls='ls --color'
 
 source ~/.bashfiles/locations.sh
@@ -19,3 +16,6 @@ function fromBase64 {
 function removePostmarkServices {
     powershell "Get-Service postmark* | Stop-Service -passthru | foreach { sc.exe delete $_.Name }"
 }
+
+# make screen work on Cygwin
+export SHELL=/bin/bash
