@@ -5,6 +5,7 @@ source ~/.bashfiles/prompt.sh
 
 # I hope I don't have to use bash on Windows anytime soon
 # source ~/.bashfiles/windows.sh
+source ~/.bashfiles/linux.sh
 
 shopt -s nocaseglob
 # we also need the line below in ~/.inputrc
