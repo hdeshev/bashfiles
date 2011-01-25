@@ -9,4 +9,4 @@ function prompt_command {
 }
 PROMPT_COMMAND=prompt_command
 export PROMPT_COMMAND
-PS1='\e[37;1m[$promptPWD]$ \e[0m'
+PS1='[$promptPWD]$ '
