@@ -1,4 +1,5 @@
 alias ls='ls --color'
+alias ack='ack-grep -i'
 
 source ~/.bashfiles/locations.sh
 source ~/.bashfiles/prompt.sh
