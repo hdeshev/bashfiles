@@ -41,8 +41,9 @@ bindkey -s ^U " cd ..^M"
 # Complete uppercase words when typing lowercase
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 setopt nocaseglob
-# we also need the line below in ~/.inputrc
-# set completion-ignore-case on
+
+# Sane backward-word and forward-word that doesn't skip *()=, etc
+export WORDCHARS=''
 
 alias f="gvim --remote-silent"
 
