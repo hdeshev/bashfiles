@@ -15,5 +15,5 @@ shopt -s nocaseglob
 # make screen work on Cygwin
 export SHELL=/bin/bash
 
-export EDITOR="emacsclient -n"
+export EDITOR="gvim --remote-silent"
 alias f=$EDITOR
