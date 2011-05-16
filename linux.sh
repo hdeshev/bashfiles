@@ -1,2 +1,2 @@
 # Linux execute helpers
-alias ii='gnome-open'
+alias ii='xdg-open'
