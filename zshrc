@@ -43,6 +43,8 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 #ignore case when globbing
 setopt nocaseglob
+# bring back bash-style noglobs like 'rake sometask[param]' and 'find -name *scala'
+setopt no_nomatch
 
 # Sane backward-word and forward-word that doesn't skip *()=, etc
 export WORDCHARS=''
