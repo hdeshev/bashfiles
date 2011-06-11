@@ -60,7 +60,7 @@ SAVEHIST=1000
 HISTFILE=~/.history
 setopt APPEND_HISTORY
 
-export PATH=$PATH:/opt/sbt:/opt/scala/bin:/opt/jruby/bin
+export PATH=$PATH:/opt/sbt:/opt/scala/bin:/opt/jruby/bin:/opt/play
 
 source ~/.bashfiles/locations.sh
 source ~/.bashfiles/linux.sh
