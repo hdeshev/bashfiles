@@ -14,3 +14,4 @@ export SHELL=/bin/bash
 
 export EDITOR="gvim --remote-silent"
 alias f=$EDITOR
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

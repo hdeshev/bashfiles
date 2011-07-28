@@ -65,3 +65,4 @@ export PATH=$PATH:/opt/sbt:/opt/scala/bin:/opt/jruby/bin:/opt/play
 source ~/.bashfiles/locations.sh
 source ~/.bashfiles/linux.sh
 source ~/.bashfiles/aliases.sh
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
