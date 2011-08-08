@@ -72,6 +72,9 @@ case $TERM in
         ;;
 esac
 
+[[ -s "/home/hristo/.rvm/scripts/rvm" ]] && source "/home/hristo/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+
+
 source ~/.bashfiles/locations.sh
 source ~/.bashfiles/linux.sh
 source ~/.bashfiles/aliases.sh
