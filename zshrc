@@ -60,7 +60,12 @@ SAVEHIST=1000
 HISTFILE=~/.history
 setopt APPEND_HISTORY
 
-export PATH=$PATH:/opt/sbt:/opt/scala/bin:/opt/jruby/bin:/opt/play
+export M2_HOME=/opt/apache-maven
+
+export PATH=$PATH:/opt/sbt:/opt/scala/bin
+export PATH=$PATH:/opt/jruby/bin:/opt/play:/var/lib/gems/1.8/gems/jekyll-0.10.0/bin
+export PATH=$PATH:$M2_HOME/bin
+
 
 source ~/.bashfiles/locations.sh
 source ~/.bashfiles/linux.sh
