@@ -72,10 +72,8 @@ case $TERM in
         ;;
 esac
 
-[[ -s "/home/hristo/.rvm/scripts/rvm" ]] && source "/home/hristo/.rvm/scripts/rvm"  # This loads RVM into a shell session.
-
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 
 source ~/.bashfiles/locations.sh
 source ~/.bashfiles/linux.sh
 source ~/.bashfiles/aliases.sh
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
