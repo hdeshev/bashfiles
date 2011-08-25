@@ -18,8 +18,8 @@ git_prompt_info() {
 setopt prompt_subst
 
 # prompt
-export PS1='%{$fg_bold[blue]%}%%%{$reset_color%} '
-export RPROMPT='${SSH_CONNECTION+"%{$fg_bold[green]%}"}%{$fg_bold[blue]%}%~%{$reset_color%} -- $(git_prompt_info)'
+export PS1='${SSH_CONNECTION+"%{$fg_bold[green]%}"}%{$fg_bold[blue]%}%~%{$reset_color%} '
+export RPROMPT='$(git_prompt_info)'
 
 
 
