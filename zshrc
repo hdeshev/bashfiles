@@ -21,9 +21,6 @@ setopt prompt_subst
 export PS1='${SSH_CONNECTION+"%{$fg_bold[green]%}"}%{$fg_bold[blue]%}%~%{$reset_color%} '
 export RPROMPT='$(git_prompt_info)'
 
-
-
-
 # automatically enter directories without cd
 setopt auto_cd
 
@@ -33,6 +30,10 @@ export SHELL=/usr/bin/zsh
 
 # Emacs shortcuts
 bindkey -e
+
+# Disable output freesing with C-s
+# I like that mapped to "save" in my Vim
+stty -ixon
 
 # Go up a dir by hitting C-U. No more cd ../../../ madness
 bindkey -s ^U " cd ..^M"
@@ -52,6 +53,7 @@ setopt no_nomatch
 export WORDCHARS=''
 
 alias f="gvim --remote-silent"
+alias t="tmux -2u"
 
 # ignore duplicate history entries
 setopt histignoredups
@@ -63,8 +65,13 @@ HISTFILE=~/.history
 setopt APPEND_HISTORY
 
 export M2_HOME=/opt/apache-maven
+export ANT_OPTS='-Xms512m -Xmx1024m'
 
-export PATH=$PATH:/opt/sbt:/opt/scala/bin
+# Get Java in the 20th century and turn font antialising on
+# Disable it as it causes the Play! java compile to hang
+# export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on"
+
+export PATH=$PATH:/opt/sbt:/opt/scala/bin:/opt/nodejs/bin
 export PATH=$PATH:/opt/jruby/bin:/opt/play:/var/lib/gems/1.8/gems/jekyll-0.10.0/bin
 export PATH=$PATH:$M2_HOME/bin
 
@@ -75,6 +82,9 @@ case $TERM in
 esac
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
+
+export PIP_REQUIRE_VIRTUALENV=true
+export PIP_RESPECT_VIRTUALENV=true
 
 source ~/.bashfiles/locations.sh
 source ~/.bashfiles/linux.sh
