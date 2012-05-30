@@ -87,5 +87,10 @@ export PIP_REQUIRE_VIRTUALENV=true
 export PIP_RESPECT_VIRTUALENV=true
 
 source ~/.bashfiles/locations.sh
+source ~/.bashfiles/java.sh
 source ~/.bashfiles/linux.sh
 source ~/.bashfiles/aliases.sh
+
+#EC2 credentials
+export EC2_PRIVATE_KEY=~/.ssh/aws-soap-key.pem
+export EC2_CERT=~/.ssh/aws-soap-cer.pem
