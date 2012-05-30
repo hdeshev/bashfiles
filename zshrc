@@ -72,7 +72,7 @@ export ANT_OPTS='-Xms512m -Xmx1024m'
 # export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on"
 
 export PATH=$PATH:/opt/sbt:/opt/scala/bin
-export PATH=$PATH:/opt/jruby/bin:/opt/play:/var/lib/gems/1.8/gems/jekyll-0.10.0/bin:/opt/mosh/bin
+export PATH=$PATH:/opt/jruby/bin:/opt/play:/var/lib/gems/1.8/gems/jekyll-0.10.0/bin
 export PATH=$PATH:$M2_HOME/bin
 
 case $TERM in
