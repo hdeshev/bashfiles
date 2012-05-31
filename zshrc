@@ -53,7 +53,6 @@ setopt no_nomatch
 export WORDCHARS=''
 
 alias f="gvim --remote-silent"
-alias t="tmux -2u"
 
 # ignore duplicate history entries
 setopt histignoredups
@@ -64,16 +63,6 @@ SAVEHIST=1000
 HISTFILE=~/.history
 setopt APPEND_HISTORY
 
-export M2_HOME=/opt/apache-maven
-export ANT_OPTS='-Xms512m -Xmx1024m'
-
-# Get Java in the 20th century and turn font antialising on
-# Disable it as it causes the Play! java compile to hang
-# export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on"
-
-export PATH=$PATH:/opt/sbt:/opt/scala/bin
-export PATH=$PATH:/opt/jruby/bin:/opt/play:/var/lib/gems/1.8/gems/jekyll-0.10.0/bin
-export PATH=$PATH:$M2_HOME/bin
 
 case $TERM in
     *xterm*)
@@ -81,13 +70,11 @@ case $TERM in
         ;;
 esac
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
-
-export PIP_REQUIRE_VIRTUALENV=true
-export PIP_RESPECT_VIRTUALENV=true
-
 source ~/.bashfiles/locations.sh
 source ~/.bashfiles/java.sh
+source ~/.bashfiles/haskell.sh
+source ~/.bashfiles/python.sh
+source ~/.bashfiles/ruby.sh
 source ~/.bashfiles/linux.sh
 source ~/.bashfiles/aliases.sh
 
