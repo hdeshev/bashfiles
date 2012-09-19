@@ -81,3 +81,6 @@ source ~/.bashfiles/aliases.sh
 #EC2 credentials
 export EC2_PRIVATE_KEY=~/.ssh/aws-soap-key.pem
 export EC2_CERT=~/.ssh/aws-soap-cer.pem
+
+export GPGKEY=45E8E94A
+eval $(gpg-agent --daemon)
