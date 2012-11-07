@@ -1,0 +1,7 @@
+moc/cache
+moc/pid
+moc/equalizer
+moc/last_directory
+moc/playlist.m3u
+moc/socket*
+moc/softmixer
