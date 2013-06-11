@@ -1,0 +1,31 @@
+[user]
+    name = Hristo Deshev
+    email = hristo@deshev.com
+[github]
+    user = hdeshev
+    token = 57d0137af75b23aab094b4adc1b5ecfa
+
+[gui]
+    fontui = -family \"Ubuntu Mono\" -size 13 -weight normal -slant roman -underline 0 -overstrike 0
+    fontdiff = -family \"Ubuntu Mono\" -size 14 -weight normal -slant roman -underline 0 -overstrike 0
+    spellingdictionary = none
+
+[alias]
+    ci = commit
+    co = checkout
+    k = log --graph --all --pretty=format:\"%Cred%h%Creset - %Cgreen(%ad)%Creset %s%C(yellow)%d%Creset\" --abbrev-commit --date=short
+    g = gui
+    p = push
+    unstage = reset HEAD --
+    substatus = submodule foreach git status
+    subpull = !git pull && git submodule update
+    pl = "!git fetch && git rebase --preserve-merges origin/`git rev-parse --abbrev-ref HEAD`"
+[core]
+    autocrlf = false
+    safecrlf = true
+
+[branch]
+    autosetuprebase = always
+
+[push]
+    default = tracking
