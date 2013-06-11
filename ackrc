@@ -1,1 +1,2 @@
 --ignore-dir=venv
+--type-set=md=.md
