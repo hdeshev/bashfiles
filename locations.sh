@@ -1,10 +1,3 @@
 # location shortcuts
 alias goss='cd ~/oss'
-alias gp='cd ~/w/progstr'
-alias gpl='cd ~/w/progstr/progstr-log'
-alias gpf='cd ~/w/progstr/progstr-filer'
-alias gph='cd ~/w/progstr/progstr-html'
-alias gpn='cd ~/w/progstr/progstr-dotnet'
 alias gw='cd ~/w'
-alias gtmp='cd /data/tmp'
-alias gsc='cd ~/w/scala'
