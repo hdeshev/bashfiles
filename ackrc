@@ -1,3 +1,5 @@
 --ignore-case
+--ignore-file=is:tags
+--ignore-file=ext:min.js
 --ignore-dir=venv
 --type-set=md=.md
