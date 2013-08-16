@@ -21,7 +21,7 @@
     subpull = !git pull && git submodule update
     pl = "!git fetch && git rebase --preserve-merges origin/`git rev-parse --abbrev-ref HEAD`"
 [core]
-    autocrlf = false
+    autocrlf = input
     safecrlf = true
 
 [branch]
