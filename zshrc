@@ -70,17 +70,17 @@ case $TERM in
         ;;
 esac
 
-source ~/.bashfiles/locations.sh
-source ~/.bashfiles/java.sh
-source ~/.bashfiles/haskell.sh
-source ~/.bashfiles/python.sh
-source ~/.bashfiles/ruby.sh
-source ~/.bashfiles/linux.sh
-source ~/.bashfiles/aliases.sh
+CONFIG_HOME=~/.bashfiles
+source $CONFIG_HOME/locations.sh
+source $CONFIG_HOME/java.sh
+source $CONFIG_HOME/haskell.sh
+source $CONFIG_HOME/python.sh
+source $CONFIG_HOME/ruby.sh
+source $CONFIG_HOME/linux.sh
+source $CONFIG_HOME/aliases.sh
+source $CONFIG_HOME/3s.sh
+source $CONFIG_HOME/gpg-agent.sh
 
 #EC2 credentials
 export EC2_PRIVATE_KEY=~/.ssh/aws-soap-key.pem
 export EC2_CERT=~/.ssh/aws-soap-cer.pem
-
-export GPGKEY=CD246E81
-#eval $(gpg-agent --daemon)

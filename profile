@@ -23,3 +23,6 @@ fi
 
 # Speed up font rendering (Firefox, Thunderbird, etc)
 export MOZ_DISABLE_PANGO=1
+
+CONFIG_HOME=~/.bashfiles
+source $CONFIG_HOME/gpg-agent.sh
