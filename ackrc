@@ -3,3 +3,4 @@
 --ignore-file=ext:min.js
 --ignore-dir=venv
 --type-set=md=.md
+--type-set=dj=.django
