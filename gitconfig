@@ -15,11 +15,16 @@
     co = checkout
     k = log --graph --all --pretty=format:\"%Cred%h%Creset - %Cgreen(%ad)%Creset %s%C(yellow)%d%Creset\" --abbrev-commit --date=short
     g = gui
+    b = branch
     p = push
+    s = status
     unstage = reset HEAD --
     substatus = submodule foreach git status
     subpull = !git pull && git submodule update
     pl = "!git fetch && git rebase --preserve-merges origin/`git rev-parse --abbrev-ref HEAD`"
+    sshow = "!f() { git stash show stash^{/$*} -p; }; f"
+    sapply = "!f() { git stash apply stash^{/$*}; }; f"
+
 [core]
     autocrlf = input
     safecrlf = true
