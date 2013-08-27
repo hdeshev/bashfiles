@@ -16,7 +16,7 @@
     k = log --graph --all --pretty=format:\"%Cred%h%Creset - %Cgreen(%ad)%Creset %s%C(yellow)%d%Creset\" --abbrev-commit --date=short
     g = gui
     b = branch
-    p = push
+    p = pull
     s = status
     unstage = reset HEAD --
     substatus = submodule foreach git status
