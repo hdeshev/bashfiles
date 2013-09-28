@@ -6,8 +6,8 @@
     token = 57d0137af75b23aab094b4adc1b5ecfa
 
 [gui]
-    fontui = -family \"Ubuntu Mono\" -size 13 -weight normal -slant roman -underline 0 -overstrike 0
-    fontdiff = -family \"Ubuntu Mono\" -size 14 -weight normal -slant roman -underline 0 -overstrike 0
+	fontui = -family \"DejaVu Sans\" -size 10 -weight normal -slant roman -underline 0 -overstrike 0
+	fontdiff = -family \"DejaVu Sans Mono\" -size 12 -weight normal -slant roman -underline 0 -overstrike 0
     spellingdictionary = none
 
 [alias]
