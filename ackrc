@@ -2,6 +2,8 @@
 --ignore-file=is:tags
 --ignore-file=ext:min.js
 --ignore-dir=venv
+--ignore-dir=.ropeproject
 --ignore-dir=CACHE
 --type-set=md=.md
 --type-set=dj=.django
+--type-set=dust=.dust
