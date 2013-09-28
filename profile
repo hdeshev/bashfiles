@@ -25,4 +25,4 @@ fi
 export MOZ_DISABLE_PANGO=1
 
 CONFIG_HOME=~/.bashfiles
-source $CONFIG_HOME/gpg-agent.sh
+. $CONFIG_HOME/gpg-agent.sh
