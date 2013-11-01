@@ -1,6 +1,7 @@
 --ignore-case
 --ignore-file=is:tags
 --ignore-file=ext:min.js
+--ignore-file=match:/.*junit.*/
 --ignore-dir=venv
 --ignore-dir=.ropeproject
 --ignore-dir=CACHE
