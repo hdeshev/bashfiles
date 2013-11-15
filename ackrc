@@ -2,7 +2,10 @@
 --ignore-file=is:tags
 --ignore-file=ext:min.js
 --ignore-file=match:/.*junit.*/
+--ignore-file=match:/.*jquery.*\.js$/
 --ignore-dir=venv
+--ignore-dir=locale
+--ignore-dir=migrations
 --ignore-dir=.ropeproject
 --ignore-dir=CACHE
 --type-set=md=.md
