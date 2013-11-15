@@ -1,0 +1,8 @@
+tags
+*min.js
+*junit*
+*jquery*.js$
+venv/**
+locale/**
+migrations/**
+CACHE/**
