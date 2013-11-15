@@ -13,7 +13,7 @@
 [alias]
     ci = commit
     co = checkout
-    k = log --graph --all --pretty=format:\"%Cred%h%Creset - %Cgreen(%ad)%Creset %s%C(yellow)%d%Creset\" --abbrev-commit --date=short
+    k = log --graph --color --all --pretty=format:\"%Cred%h%Creset %ad %Cgreen(%an)%Creset %s%C(yellow)%d%Creset\" --abbrev-commit --date=short
     g = gui
     b = branch
     p = pull
@@ -34,3 +34,7 @@
 
 [push]
     default = tracking
+[color]
+	ui = auto
+[color "diff"]
+	whitespace = red reverse
