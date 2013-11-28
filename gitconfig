@@ -24,6 +24,7 @@
     pl = "!git fetch && git rebase --preserve-merges origin/`git rev-parse --abbrev-ref HEAD`"
     sshow = "!f() { git stash show stash^{/$*} -p; }; f"
     sapply = "!f() { git stash apply stash^{/$*}; }; f"
+    serve = !git daemon --reuseaddr --verbose --base-path=. --export-all ./.git
 
 [core]
     autocrlf = input
