@@ -1,5 +1,6 @@
 tags
 *min.js
+*min.map
 *junit*
 *jquery*.js$
 venv/**
