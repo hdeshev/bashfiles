@@ -78,7 +78,6 @@ source $CONFIG_HOME/python.sh
 source $CONFIG_HOME/ruby.sh
 source $CONFIG_HOME/linux.sh
 source $CONFIG_HOME/aliases.sh
-source $CONFIG_HOME/3s.sh
 source $CONFIG_HOME/gpg-agent.sh
 
 #EC2 credentials
