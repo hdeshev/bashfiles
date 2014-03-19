@@ -41,6 +41,8 @@ bindkey -s ^U " cd ..^M"
 # completion
 autoload -U compinit
 compinit
+autoload bashcompinit
+bashcompinit
 # Complete uppercase words when typing lowercase
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
