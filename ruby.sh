@@ -1,2 +1,2 @@
-export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
