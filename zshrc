@@ -73,6 +73,7 @@ case $TERM in
 esac
 
 CONFIG_HOME=~/.bashfiles
+source $CONFIG_HOME/tmux.sh
 source $CONFIG_HOME/locations.sh
 source $CONFIG_HOME/java.sh
 source $CONFIG_HOME/haskell.sh
