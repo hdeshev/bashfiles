@@ -1,5 +1,8 @@
 set_title() {
-    printf "\033k$1\033\\"
+    # Do nothing if running outside tmux.
+    if [ ! -z "$TMUX" ] ; then
+        printf "\033k$1\033\\"
+    fi
 }
 
 ssh() {
