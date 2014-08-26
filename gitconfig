@@ -29,6 +29,7 @@
 [core]
     autocrlf = input
     safecrlf = true
+    excludesfile = ~/.gitignore
 
 [branch]
     autosetuprebase = always
