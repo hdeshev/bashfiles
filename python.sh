@@ -2,7 +2,7 @@ export PIP_REQUIRE_VIRTUALENV=true
 export PIP_RESPECT_VIRTUALENV=true
 export PIP_DOWNLOAD_CACHE=$HOME/.pip_download_cache
 
-alias python3='python3.3'
+alias python3='python3.4'
 
 export WORKON_HOME="/opt/virtualenvs"
 
