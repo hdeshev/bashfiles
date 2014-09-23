@@ -1,4 +1,6 @@
+/tmp
 /tags
 /.agignore
 /.vimrc
 /.ctags-exclude
+/.ropeproject
