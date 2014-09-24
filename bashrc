@@ -9,10 +9,17 @@ alias f=$EDITOR
 # enable colored output from ls, etc
 export CLICOLOR=1
 
-# prompt
-export PS1='${SSH_CONNECTION+"%{$fg_bold[green]%}"}%{$fg_bold[blue]%}%~%{$reset_color%} '
+git_prompt_info() {
+  ref=$(git symbolic-ref HEAD 2> /dev/null)
+  if [[ -n $ref ]]; then
+    echo "[${T_BOLD}${T_GREEN}${ref#refs/heads/}${T_NORMAL}]"
+  fi
+}
 
-# Disable output freesing with C-s
+# prompt
+export PS1='${T_BOLD}${T_BLUE}${SSH_CONNECTION+"${T_BOLD}${T_GREEN}"}\w${T_NORMAL}$(git_prompt_info)${T_WHITE}\$${T_NORMAL} '
+
+# Disable output freezing with C-s
 # I like that mapped to "save" in my Vim
 stty -ixon
 
@@ -23,7 +30,7 @@ HISTSIZE=1000
 SAVEHIST=1000
 
 CONFIG_HOME=~/.bashfiles
-for conf_file in {prompt,tmux,locations,java,haskell,python,ruby,linux,aliases,gpg-agent} ; do
+for conf_file in {color,tmux,locations,java,haskell,python,ruby,linux,aliases,gpg-agent} ; do
     source $CONFIG_HOME/${conf_file}.sh
 done
 
