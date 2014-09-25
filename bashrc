@@ -12,12 +12,12 @@ export CLICOLOR=1
 git_prompt_info() {
     ref=$(git symbolic-ref HEAD 2> /dev/null)
     if [[ -n $ref ]]; then
-        echo " ${ref#refs/heads/} "
+        echo "[\[\${T_BOLD}\]\[\${T_GREEN}\]${ref#refs/heads/}\[\${T_NORMAL}\]]"
     fi
 }
 
 # prompt
-PS1='\[$T_BOLD\]\[$T_BLUE\]${SSH_CONNECTION+"\[$T_BOLD\]\[$T_GREEN\]"}\w\[$T_NORMAL\]\[$T_BOLD\]\[$T_GREEN\]$(git_prompt_info)\[$T_NORMAL\]\[$T_WHITE\]\$\[$T_NORMAL\] '
+PS1="\[\${T_BOLD}\]\[\${T_BLUE}\]${SSH_CONNECTION+"\[\${T_BOLD}\]\[\${T_GREEN}\]"}\w\[\${T_NORMAL}\]$(git_prompt_info)\[\${T_WHITE}\]\$\[\${T_NORMAL}\] "
 
 # Disable output freezing with C-s
 # I like that mapped to "save" in my Vim
