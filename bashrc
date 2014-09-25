@@ -16,8 +16,14 @@ git_prompt_info() {
     fi
 }
 
+make_prompt() {
+    # call git_prompt_info every time to check git status
+    PS1="\[\${T_BOLD}\]\[\${T_BLUE}\]${SSH_CONNECTION+"\[\${T_BOLD}\]\[\${T_GREEN}\]"}\w\[\${T_NORMAL}\]$(git_prompt_info)\[\${T_WHITE}\]\$\[\${T_NORMAL}\] "
+}
+
+PROMPT_COMMAND=make_prompt
+
 # prompt
-PS1="\[\${T_BOLD}\]\[\${T_BLUE}\]${SSH_CONNECTION+"\[\${T_BOLD}\]\[\${T_GREEN}\]"}\w\[\${T_NORMAL}\]$(git_prompt_info)\[\${T_WHITE}\]\$\[\${T_NORMAL}\] "
 
 # Disable output freezing with C-s
 # I like that mapped to "save" in my Vim
