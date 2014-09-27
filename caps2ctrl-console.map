@@ -1,0 +1,4 @@
+# call loadkeys on boot as root:
+# loadkeys /home/hristo/.bashfiles/caps2ctrl-console.map
+keymaps 0-127
+keycode 58 = Control #This makes Caps act as Ctrl
