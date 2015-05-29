@@ -27,16 +27,16 @@ PROMPT_COMMAND=make_prompt
 
 # Disable output freezing with C-s
 # I like that mapped to "save" in my Vim
-stty -ixon
+# stty -ixon
 
 # Go up a dir by hitting C-U. No more cd ../../../ madness
-bind '"\C-u":" cd ..\n"'
+# bind '"\C-u":" cd ..\n"'
 
 HISTSIZE=1000
 SAVEHIST=1000
 
 CONFIG_HOME=~/.bashfiles
-for conf_file in {color,tmux,locations,java,haskell,python,ruby,linux,aliases,gpg-agent} ; do
+for conf_file in {color,tmux,locations,java,haskell,python,ruby,linux,aliases,android,nodejs,gnome-keyring} ; do
     source $CONFIG_HOME/${conf_file}.sh
 done
 
@@ -45,3 +45,6 @@ export EC2_PRIVATE_KEY=~/.ssh/aws-soap-key.pem
 export EC2_CERT=~/.ssh/aws-soap-cer.pem
 
 . /etc/bash_completion
+
+export NVM_DIR="/home/local/TELERIK/hdeshev/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
