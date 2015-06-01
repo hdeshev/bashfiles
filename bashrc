@@ -36,7 +36,7 @@ HISTSIZE=1000
 SAVEHIST=1000
 
 CONFIG_HOME=~/.bashfiles
-for conf_file in {color,tmux,locations,java,haskell,python,ruby,linux,aliases,android,nodejs,gnome-keyring} ; do
+for conf_file in {color,tmux,locations,java,haskell,python,ruby,linux,aliases,android,nodejs} ; do
     source $CONFIG_HOME/${conf_file}.sh
 done
 
@@ -45,6 +45,3 @@ export EC2_PRIVATE_KEY=~/.ssh/aws-soap-key.pem
 export EC2_CERT=~/.ssh/aws-soap-cer.pem
 
 . /etc/bash_completion
-
-export NVM_DIR="/home/local/TELERIK/hdeshev/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
