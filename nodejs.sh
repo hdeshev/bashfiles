@@ -5,6 +5,6 @@ export NVM_DIR="$HOME/.nvm"
 # Activate nvm
 . ~/.nvm/nvm.sh
 
-nvm use v0.12.3 > /dev/null
+nvm use v0.12.7 > /dev/null
 
 alias n='PATH=$(npm bin):$PATH'
