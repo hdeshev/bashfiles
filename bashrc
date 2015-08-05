@@ -45,3 +45,12 @@ export EC2_PRIVATE_KEY=~/.ssh/aws-soap-key.pem
 export EC2_CERT=~/.ssh/aws-soap-cer.pem
 
 . /etc/bash_completion
+
+export NVM_DIR="/home/local/TELERIK/hdeshev/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+###-tns-completion-start-###
+if [ -f /home/local/TELERIK/hdeshev/.tnsrc ]; then 
+    source /home/local/TELERIK/hdeshev/.tnsrc 
+fi
+###-tns-completion-end-###
