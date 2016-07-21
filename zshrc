@@ -86,3 +86,7 @@ source $CONFIG_HOME/gpg-agent.sh
 #EC2 credentials
 export EC2_PRIVATE_KEY=~/.ssh/aws-soap-key.pem
 export EC2_CERT=~/.ssh/aws-soap-cer.pem
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
