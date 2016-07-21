@@ -46,11 +46,6 @@ export EC2_CERT=~/.ssh/aws-soap-cer.pem
 
 . /etc/bash_completion
 
-export NVM_DIR="/home/local/TELERIK/hdeshev/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
-###-tns-completion-start-###
-if [ -f /home/local/TELERIK/hdeshev/.tnsrc ]; then 
-    source /home/local/TELERIK/hdeshev/.tnsrc 
-fi
-###-tns-completion-end-###
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

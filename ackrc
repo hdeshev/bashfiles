@@ -1,13 +1,25 @@
---ignore-case
+--smart-case
 --ignore-file=is:tags
---ignore-file=ext:min.js
+--ignore-file=match:.ctags-exclude
+--ignore-file=match:tags
+--ignore-file=ext:dart
+--ignore-file=ext:tmp
+# JavaScript
+--ignore-file=match:min.js
 --ignore-file=match:/.*junit.*/
 --ignore-file=match:/.*jquery.*\.js$/
+--ignore-file=match:js.map
+# node / nativescript
+--ignore-dir=is:node_modules
+--ignore-dir=is:bower_components
+--ignore-dir=is:platforms
+--ignore-dir=is:tmp
+--ignore-dir=is:.stack-work
+--type-set=ts=.ts,.d.ts
+# python
 --ignore-dir=venv
 --ignore-dir=locale
 --ignore-dir=migrations
 --ignore-dir=.ropeproject
 --ignore-dir=CACHE
 --type-set=md=.md
---type-set=dj=.django
---type-set=dust=.dust

@@ -6,3 +6,4 @@ tags
 venv/**
 locale/**
 CACHE/**
+node_modules
