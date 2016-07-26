@@ -1,10 +1,10 @@
 --smart-case
---ignore-file=is:tags
 --ignore-file=match:.ctags-exclude
 --ignore-file=match:tags
 --ignore-file=ext:dart
 --ignore-file=ext:tmp
 # JavaScript
+--ignore-file=ext:map
 --ignore-file=match:min.js
 --ignore-file=match:/.*junit.*/
 --ignore-file=match:/.*jquery.*\.js$/
@@ -14,8 +14,9 @@
 --ignore-dir=is:bower_components
 --ignore-dir=is:platforms
 --ignore-dir=is:tmp
---ignore-dir=is:.stack-work
+--ignore-dir=is:dist
 --type-set=ts=.ts,.d.ts
+--type-set=dts=.d.ts
 # python
 --ignore-dir=venv
 --ignore-dir=locale
@@ -23,3 +24,4 @@
 --ignore-dir=.ropeproject
 --ignore-dir=CACHE
 --type-set=md=.md
+--ignore-dir=is:dist
