@@ -14,6 +14,7 @@
 --ignore-dir=is:bower_components
 --ignore-dir=is:platforms
 --ignore-dir=is:tmp
+--ignore-dir=is:log
 --ignore-dir=is:dist
 --type-set=ts=.ts,.d.ts
 --type-set=dts=.d.ts
@@ -25,3 +26,7 @@
 --ignore-dir=CACHE
 --type-set=md=.md
 --ignore-dir=is:dist
+# CSS
+--type-add=css=.scss
+--type-add=erb=.erb
+--type-add=slim=.slim
