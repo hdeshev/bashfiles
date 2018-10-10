@@ -3,6 +3,7 @@
 --ignore-file=match:tags
 --ignore-file=ext:dart
 --ignore-file=ext:tmp
+--ignore-dir=is:.vagrant
 # JavaScript
 --ignore-file=ext:map
 --ignore-file=match:min.js
@@ -15,6 +16,7 @@
 --ignore-dir=is:platforms
 --ignore-dir=is:tmp
 --ignore-dir=is:log
+--ignore-dir=is:debug
 --ignore-dir=is:dist
 --type-set=ts=.ts,.d.ts
 --type-set=dts=.d.ts
@@ -30,3 +32,11 @@
 --type-add=css=.scss
 --type-add=erb=.erb
 --type-add=slim=.slim
+--type-add=rake=.rake
+# tests
+--type-add=test:match:test
+--type-add=test:match:spec
+# ruby
+--type-add=rake=.rake
+# Salesforce
+--type-set=cls=.cls,.page,.trigger
