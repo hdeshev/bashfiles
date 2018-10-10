@@ -37,6 +37,8 @@
 [push]
     default = tracking
 [color]
-	ui = auto
+    ui = auto
 [color "diff"]
-	whitespace = red reverse
+    whitespace = red reverse
+[commit]
+    verbose = true
