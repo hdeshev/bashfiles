@@ -22,8 +22,8 @@
 --type-set=dts=.d.ts
 # python
 --ignore-dir=venv
+--ignore-dir=env
 --ignore-dir=locale
---ignore-dir=migrations
 --ignore-dir=.ropeproject
 --ignore-dir=CACHE
 --type-set=md=.md
@@ -38,5 +38,9 @@
 --type-add=test:match:spec
 # ruby
 --type-add=rake=.rake
+--ignore-dir=is:coverage
 # Salesforce
 --type-set=cls=.cls,.page,.trigger
+# dbt
+--ignore-dir=is:target
+--ignore-dir=is:logs
