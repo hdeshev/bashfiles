@@ -45,3 +45,5 @@
 
 --langmap=java:+.cls
 --langmap=java:+.trigger
+
+--regex-sql=/[ \t]*macro[ \t]+([a-zA-Z0-9_]+)/\1/f,functions/
